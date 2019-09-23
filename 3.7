@@ -1,4 +1,5 @@
 
+
 import java.util.Scanner;
 
 public class Multiples
@@ -20,6 +21,18 @@ public class Multiples
         System.out.println ("The multiples of " + value + " between " + value + " and " + limit +
         " (inclusive) are: ");
         
+        for (mult = value; mult <= limit; mult += value)
+        {
+            System.out.print (mult + "\t");
+            //prints  a specific number of values per live
+            count++;
+            
+            if (count % PER_LINE == 0)
+            {
+                System.out.println();
+            }//end if
+            
+        }//end for loop
         
         System.out.println("audrey");
         
